@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            calender
+        </title>
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    </head>
+    <body>
+        <center><h1>Calender</h1></center>
+        <input type="text" id="i501" placeholder="select date">
+    </body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="jqueryui/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $("#i501").datepicker({
+            showOtherMonths : true,
+            changeYear: true,
+            changeMonth: true,
+            showWeek: true,
+            minDate: new Date(1950,1,1),
+            maxDate: new Date(2050,1,1)
+        });
+    </script>
+</html>

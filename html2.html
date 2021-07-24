@@ -1,0 +1,46 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Welcome to expense manager new webpage!!</h2>
+    </body>
+</html><script type="text/Javascript">
+    var width = 200;
+    var diff = 5;
+    var x=0;
+    function fn1()
+    {
+        var x = setInterval(expand,15);
+    }
+    function fn2()
+    {
+        clearInterval(x);
+        var x = setInterval(shrink,15);
+    }
+    function expand()
+    {
+        var img = document.getElementByClassname("c2");
+        if(width<250)
+        {
+            width=width+diff;
+            img.style.width=width;
+        }
+        else
+        {
+            clearInterval(x);
+        }
+    }
+    function shrink()
+    {
+        var img = document.getElementByClassName("c2");
+        if(width>200)
+        {
+            width=width-diff;
+            img.style.width=width;
+        }
+        else
+        {
+            clearInterval(x);
+        }
+    }
+ </script>

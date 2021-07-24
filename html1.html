@@ -1,0 +1,341 @@
+<html>
+    <head>
+        <title>
+            Main Page
+        </title>
+        <link rel="stylesheet" href="css1.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    </head>
+    <body>
+        <center><h1 id="i1">EXPENSE AND ROUTINE MANAGER</h1></center>
+        <div id="i81">
+            <h3 class="c81">hello</h3><p>there</p>
+            <h3 class="c81">again</h3><p>again hello there</p>
+            <h3 class="c81">hajimemashite</h3><p>this is japanese meaning of what is written</p>
+        </div>
+        <form onsubmit="return fn20()" action="html4.html"><div id="i50">
+            <form onsubmit="return fn20()" action="html4.html"><input type="text" id="ip1" class="cp1" placeholder="Username"><label id="lb1" style="color:aqua; visibility: hidden;">    Valid</label><br>
+            <input type="password" id="ip2" class="cp1" placeholder="Password"><label id="lb2" style="color:aqua; visibility: hidden;">    Valid</label><br>
+            <button type="button" id="btn2">Show</button><button type="submit" id="btn1">log in</button>
+        </div></form>
+        <div id="i70">
+            <select id="i71" class="c71">
+                <option value="aa">AA</option><option value="bb">BB</option><option value="cc">CC</option>
+            </select>
+            <select id="i72" class="c71">
+                <option value="abra">ABRA</option><option value="valam">VALAM</option><option value="salam">SALAM</option>
+            </select>
+            <select id="i73" class="c71">
+                <option value="kadabra">TERABITE</option><option value="mb">MEGABITE</option><option value="gb">GIGABYTE</option>
+            </select>
+            <select id="i74" class="c71">
+                <option value="boiler">BOILER</option><option value="mega">MEGA</option><option value="vega">VEGA</option>
+            </select>
+        </div>
+        <div class="i20">
+        <h2 class="c1" id="i2"><p><a href="html2.html">EXPENSE MANAGER</a></p><img id="i30" class="c2" src="expense.png" width="200px" height="200px" onmouseover="fn1()" onmouseout="fn2()"></h2>
+        <h3><ul id="i10">
+            <li id="i40" class="c10" onmouseover="fn5()" onmouseout="fn6()">HOME</li><li class="c10" id="i41" onmouseover="fn7()" onmouseout="fn8()">ABOUT</li><li class="c10" id="i42" onmouseover="fn9()" onmouseout="fn10()">HELP</li><li class="c10" id="i43" onmouseover="fn11()" onmouseout="fn12()"><a href="html5.html">CALENDER</a></li>
+        </ul></h3>
+        <h2 class="c1" id="i3"><p><a href="html3.html">ROUTINE MANAGER</a></p><img class="c2" id="i31" src="routine.png" width="200px" height="200px" onmouseover="fn3()" onmouseout="fn4()"></h2>
+        </div>
+        <div id="p1"><p>This is a sample website which includes front-end development and is made by Kartik Vashist of SRM Institute of Science and Technology in order to practice the concepts of HTML , CSS and Javascript languages.</p></div>
+        <button type="button" id="btn3">click</button>
+    </body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="jqueryui/jquery-ui.js"></script>
+    <script type="text/javascript">
+        var id=0;
+        var width=200;
+        var height=200;
+        function fn1()
+        {
+            id=setInterval(expand,50);
+        }
+        function fn2()
+        {
+            clearInterval(id);
+            id=setInterval(shrink,50);
+        }
+        function expand()
+        {
+            var img=document.getElementById("i30");
+            if(width<218)
+            {
+                width=width+5;
+                height=height+5;
+                img.style.width=width;
+                img.style.height=height;
+            }
+            else
+            {
+                clearInterval(id);
+            }
+        }
+        function shrink()
+        {
+            var img=document.getElementById("i30");
+            if(width>200)
+            {
+                width=width-5;
+                height=height-5;
+                img.style.width=width;
+                img.style.height=height;
+            }
+            else
+            {
+                clearInterval(id);
+            }
+        }
+        function fn3()
+        {
+            id=setInterval(expand2,50);
+        }
+        function fn4()
+        {
+            clearInterval(id);
+            id=setInterval(shrink2,50);
+        }
+        function expand2()
+        {
+            var img=document.getElementById("i31");
+            if(width<218)
+            {
+                width=width+5;
+                height=height+5;
+                img.style.width=width;
+                img.style.height=height;
+            }
+            else
+            {
+                clearInterval(id);
+            }
+        }
+        function shrink2()
+        {
+            var img=document.getElementById("i31");
+            if(width>200)
+            {
+                width=width-5;
+                height=height-5;
+                img.style.width=width;
+                img.style.height=height;
+            }
+            else
+            {
+                clearInterval(id);
+            }
+        }
+        var id2=0;
+        var wid2=337;
+        function fn5()
+        {
+            id2=setInterval(expand3,50);
+        }
+        function fn6()
+        {
+            clearInterval(id2);
+            id2=setInterval(shrink3,50);
+        }
+        function expand3()
+        {
+            var img=document.getElementById("i40");
+            if(wid2<360)
+            {
+                wid2=wid2+5;
+                img.style.width=wid2;
+            }
+            else
+            {
+                clearInterval(id2);
+            }
+        }
+        function shrink3()
+        {
+            var img=document.getElementById("i40");
+            if(wid2>337)
+            {
+                wid2=wid2-5;
+                img.style.width=wid2;
+            }
+            else
+            {
+                clearInterval(id2);
+            }
+        }
+        var id3=0;
+        var wid3=337;
+        function fn7()
+        {
+            id3=setInterval(expand7,50);
+        }
+        function fn8()
+        {
+            clearInterval(id3);
+            id3=setInterval(shrink7,50);
+        }
+        function expand7()
+        {
+            var img=document.getElementById("i41");
+            if(wid3<360)
+            {
+                wid3=wid3+5;
+                img.style.width=wid3;
+            }
+            else
+            {
+                clearInterval(id3);
+            }
+        }
+        function shrink7()
+        {
+            var img=document.getElementById("i41");
+            if(wid3>337)
+            {
+                wid3=wid3-5;
+                img.style.width=wid3;
+            }
+            else
+            {
+                clearInterval(id3);
+            }
+        }
+        var id4=0;
+        var wid4=337;
+        function fn9()
+        {
+            id4=setInterval(expand9,50);
+        }
+        function fn10()
+        {
+            clearInterval(id4);
+            id4=setInterval(shrink9,50);
+        }
+        function expand9()
+        {
+            var img=document.getElementById("i42");
+            if(wid4<360)
+            {
+                wid4=wid4+5;
+                img.style.width=wid4;
+            }
+            else
+            {
+                clearInterval(id4);
+            }
+        }
+        function shrink9()
+        {
+            var img=document.getElementById("i42");
+            if(wid4>337)
+            {
+                wid4=wid4-5;
+                img.style.width=wid4;
+            }
+            else
+            {
+                clearInterval(id4);
+            }
+        }
+        var id5=0;
+        var wid5=337;
+        function fn11()
+        {
+            id5=setInterval(expand11,50);
+        }
+        function fn12()
+        {
+            clearInterval(id5);
+            id5=setInterval(shrink11,50);
+        }
+        function expand11()
+        {
+            var img=document.getElementById("i43");
+            if(wid5<360)
+            {
+                wid5=wid5+5;
+                img.style.width=wid5;
+            }
+            else
+            {
+                clearInterval(id5);
+            }
+        }
+        function shrink11()
+        {
+            var img=document.getElementById("i43");
+            if(wid5>337)
+            {
+                wid5=wid5-5;
+                img.style.width=wid5;
+            }
+            else
+            {
+                clearInterval(id5);
+            }
+        }
+        function fn20()
+        {
+            var v1 = document.getElementById("ip1");
+            var re1 = /^[a-z A-Z 0-9]+$/;
+            if(re1.test(v1.value))
+            {
+                document.getElementById("lb1").innerHTML="      Valid Username";
+                document.getElementById("lb1").style.visibility="visible";
+                document.getElementById("lb1").style.color="green";
+                v1.style.border="solid 1.2px green";
+            }
+            else
+            {
+                document.getElementById("lb1").innerHTML="      Invalid Username";
+                document.getElementById("lb1").style.visibility="visible";
+                document.getElementById("lb1").style.color="red";
+                v1.style.border="solid 1.2px red";
+            }
+            var v2 = document.getElementById("ip2");
+            var re2 = /^([a-z A-Z 0-9@#$%&*]+)$/;
+            if(re2.test(v2.value))
+            {
+                document.getElementById("lb2").innerHTML="      Valid Password";
+                document.getElementById("lb2").style.visibility="visible";
+                document.getElementById("lb2").style.color="green";
+                v2.style.border="solid 1.2px green";
+            }
+            else
+            {
+                document.getElementById("lb2").innerHTML="      Invalid Password";
+                document.getElementById("lb2").style.visibility="visible";
+                document.getElementById("lb2").style.color="red";
+                v2.style.border="solid 1.2px red";
+            }
+            if(v1.value.trim() == "" || v2.value.trim() == "")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        $("#i81").accordion({
+            collapsible: true,
+            heightStyle: true,
+            animate: 300,
+            event: "click",
+            active: 0
+        });
+        $("#btn2").click(function(){
+            $(".cp1").animate({
+                opacity: '1',
+                left: '6px'
+            },400);
+        });
+        $("#btn3").click(function(){
+            $("#i10").fadein(2000,disp)});
+            function disp(){
+            $("#i10").fadeout(2000);}
+    </script>
+</html>
+
